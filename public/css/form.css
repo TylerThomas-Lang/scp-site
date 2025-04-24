@@ -1,0 +1,66 @@
+.page {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 170px);
+    justify-content: center;
+    align-items: center;
+}
+.log-in {
+    background-color: var(--base-variant);
+    width: 1fr;
+    height: 1fr;
+    border-radius: 20px;
+}
+.log-in-title {
+    padding: 20px;
+    padding-left: 40px;
+    font-size: 30px;
+    width: 1fr;
+    height: 30px;
+}
+.log-in-info {
+    font-family: var(--base-font);
+    font-size: 20px;
+    width: 400px;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.log-in-info-title {
+    padding-bottom: 30px;
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.log-in-info-bar {
+    height: 30px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--base-variant-dark);
+    background-color: var(--base-color);
+    color: var(--secondary-text);
+    font-family: inherit;
+    padding: 10px;
+}
+.log-in-submit {
+    font-family: inherit;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--base-variant-dark);
+    color: var(--text-color);
+    background-color: var(--base-variant-dark);
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
+.log-in-submit:active {
+    background-color: var(--base-variant);
+}
+label {
+    width: 50px;
+    font-size: 15px;
+    color: darkred;
+}

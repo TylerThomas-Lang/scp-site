@@ -1,0 +1,58 @@
+:root {
+    --base-variant: rgb(255, 251, 251);
+    --base-color: rgb(223, 218, 214);
+    --base-variant-dark: rgb(175, 162, 162);
+    --text-color: black;
+    --secondary-text: rgb(20, 20, 20);
+    --primary-color: rgb(70, 64, 94);
+    --accent-color: rgb(74, 159, 255);
+    --invert-filter: 100%;
+    --header-font: 'Candal', sans-serif;
+    --base-font: "Nunito", sans-serif;
+}
+.darkmode {
+    --base-color: rgb(35, 35, 39);
+    --base-variant: rgb(25, 24, 29);
+    --base-variant-dark: rgb(0, 0, 0);
+    --text-color: rgb(255, 255, 255);
+    --secondary-text: rgb(216, 216, 216);
+    --primary-color: rgb(170, 166, 185);
+    --accent-color: rgb(0, 89, 255);
+    --invert-filter: 0%;
+}
+body {
+    margin: 0px;
+    margin-top: 170px;
+    background-color: var(--base-color);
+    color: var(--text-color);
+    transition: .2s;
+    height: 100%;
+    font-family: var(--header-font);
+}
+#theme-switch {
+    background-color: var(--base-variant);
+    border-style: solid;
+    border-color: var(--base-variant);
+    border-radius: 100%;
+    padding: 5px 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+#theme-switch svg {
+    fill: var(--text-color);
+    margin: 3px;
+    width: 24px;
+    height: 24px;
+    transition: .2s;
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}

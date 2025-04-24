@@ -1,0 +1,59 @@
+input{
+    background-color: var(--base-variant);
+    border: black;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.personalInfo, .employmentInfo, .misc {
+    width: 350px;
+    padding: 20px;
+}
+.personalInfo input, .employmentInfo input {
+    width: 350px;
+    height: 25px;
+    color: var(--text-color);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    font-family: var(--base-font);
+    margin: 10px;
+}
+.personalInfo label, .employmentInfo label, .misc label {
+    font-size: 20px;
+    margin: 10px;
+}
+.misc select {
+    margin: 10px;
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+}
+.misc input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+#classification {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+}
+
+#classification:hover {
+    cursor: pointer;
+}
+
+#submit {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+}
+
+#submit:hover {
+    cursor: pointer;
+}

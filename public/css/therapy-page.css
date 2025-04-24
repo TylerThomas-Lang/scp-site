@@ -1,0 +1,53 @@
+.page {
+    height: calc(100vh - 170px);
+}
+.intro {
+    padding: 2vw;
+    min-height: 400px;
+    height: calc(100% - 73px);
+    max-height: 800px;
+    display: flex;
+}
+.intro-text {
+    width: 100%;
+    display: flex;
+    margin-left: 5vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.intro-text h1 {
+    margin: 0;
+    font-size: 4vw;
+    text-decoration: underline;
+    text-underline-offset: 2vh;
+}
+.intro-text h4 {
+    margin: 10px;
+    font-size: 2vw;
+    font-family: var(--base-font);
+}
+#sign-up {
+    text-align: center;
+    margin-top: 2vh;
+    padding: 1.8vh;
+    padding-top: 1vh;
+    width: 5vw;
+    border-radius: 4vh;
+    background-color: var(--base-variant-dark);;
+    border: 3px solid var(--base-variant-dark);
+    font-size: 1vw;
+}
+#sign-up:hover {
+    background-color: var(--base-variant-);
+    cursor: pointer;
+}
+.therapy-image {
+    height: 100%;
+    border-radius: 50%;
+    border: 20px solid var(--base-variant);
+}
+.header-title{
+    color: var(--text-color);
+    text-decoration: none;
+}

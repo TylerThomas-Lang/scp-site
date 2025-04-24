@@ -1,0 +1,12 @@
+.page {
+    display: flex
+}
+.account-info {
+    width: 50%;
+    height: 100px;
+    background-color: var(--base-variant);
+}
+.header-title{
+    color: var(--text-color);
+    text-decoration: none;
+}

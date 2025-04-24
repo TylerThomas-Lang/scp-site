@@ -1,0 +1,81 @@
+.menu {
+    background-color: var(--base-variant);
+    width: 60px;
+    bottom: 0;
+    top: 170px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu.active {
+    width: 300px;
+}
+.menu svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--text-color);
+}
+.menu img {
+    width: 30px;
+    height: 30px;
+    filter: invert(var(--invert-filter));
+}
+.menu-btn {
+    padding: 15px;
+}
+#menu-btn {
+    cursor: pointer;
+}
+.menu-btn:hover {
+    background-color: var(--base-color);
+}
+.page {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+    transition: .3s;
+}
+.menu.active ~ .page {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+}
+.menu li {
+    display: flex;
+    height: 80px;
+    list-style: none;
+    align-items: center;
+}
+.menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 25px;
+}
+.menu li:hover {
+    background-color: var(--base-color);
+    cursor: pointer;
+}
+.menu .menu-name {
+    margin-left: 16px;
+}
+.menu .menu-tooltip {
+    pointer-events: none;
+    font-size: 25px;
+    position: fixed;
+    opacity: 0;
+    transform: translate(65px);
+    background-color: var(--base-variant);
+    padding: 10px;
+    padding-top: 5px;
+    border-radius: 20px
+}
+.menu li:hover .menu-tooltip {
+    opacity: 100;
+}
+.menu.active li:hover .menu-tooltip {
+    opacity: 0;
+}
